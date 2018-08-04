@@ -18,19 +18,17 @@ class Header extends Component {
         window.addEventListener('scroll',this.handleScroll);
     }
 
-
-    handleScroll = () => {
-       if(window.scrollY > 0){
+    handleScroll = ()=>{
+        if(window.scrollY > 0){
             this.setState({
                 headerShow: true
             })
-       } else {
+        } else {
             this.setState({
                 headerShow: false
             })
-       }
+        }
     }
-
 
     toggleDrawer = (value) => {
         this.setState({
