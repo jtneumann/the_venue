@@ -17,6 +17,8 @@ class Header extends Component {
     componentDidMount(){
         window.addEventListener('scroll',this.handleScroll);
     }
+    //use componentWillUmount when you have routes that won't use this feature.
+    
 
     handleScroll = ()=>{
         if(window.scrollY > 0){
